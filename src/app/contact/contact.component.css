@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&display=swap');
+
+
+
+body {
+    background: url('../../assets/wave.jpg') no-repeat center center/cover;
+    margin: 0;
+    /* background: #fc9bfc; */
+    /* background: #ffffff; */
+    min-height: 100vh;
+    font-family: 'Alatsi', sans-serif;
+  
+}
+
+.contact {
+    display: flex;
+    flex-direction: row; /* Ensure items are aligned horizontally */
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-character {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: 1; /* Ensure character is on the left */
+}
+
+.contact-character img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;;
+}
+
+.contact-form {
+    flex: 1;
+    margin-left: 40px; /* Adjust margin to space from the character */
+    max-width: 600px; /* Limit width for better readability */
+    order: 2; /* Ensure form is on the right */
+}
+
+.contact-form h2 {
+    font-family: 'Alatsi', sans-serif;
+    font-size: 2.8rem;
+    color: #95297e;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 1.1rem;
+    color: #95297e;
+    margin-bottom: 5px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+    color: #666;
+}
+
+.contact-form button {
+    background-color: #95297e;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.contact-form button:hover {
+    background-color: #77009d;
+}

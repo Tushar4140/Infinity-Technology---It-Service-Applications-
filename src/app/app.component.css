@@ -1,0 +1,104 @@
+/* styles.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  background: linear-gradient(135deg, #5d0f6b, #91267f, #380157); /* Diagonal gradient */
+  padding: 1rem 0; /* Adjusted padding to full width */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* More pronounced shadow */
+  position: fixed; /* Fixed position for full-screen effect */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it stays on top of other content */
+  height: 60px
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  height: 50px; /* Adjust logo size as needed */
+  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth zoom and filter effects */
+}
+
+.navbar-logo img:hover {
+  transform: scale(1.1); /* Subtle zoom effect */
+  filter: brightness(1.3); /* Increased brightness on hover */
+}
+
+.navbar-brand {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem; /* Slightly larger font size */
+  font-weight: 700;
+  color: #f4f4f4; /* Light color for text */
+  margin-left: 1rem;
+  border-bottom: 3px solid transparent; /* Initially transparent border */
+  padding-bottom: 0.5rem;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #f4c300; /* Yellow on hover */
+  border-color: #f4c300; /* Yellow border on hover */
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  margin-left: 2rem;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: #f4f4f4; /* Light color for text */
+  font-weight: 600;
+  font-size: 1.1rem; /* Slightly larger font size */
+  position: relative;
+  padding-bottom: 0.5rem; /* Added space for underline effect */
+  transition: color 0.3s ease;
+}
+
+.navbar-menu a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background: #f4c300;
+  /*Yellowunderline*/position: absolute;
+  left: 0;
+  bottom: 0;
+  /*Alignwithbottomofthetext*/width: 0;
+  transition: width 0.3s ease;
+  -webkit-transition: width 0.3s ease;
+  -moz-transition: width 0.3s ease;
+  -ms-transition: width 0.3s ease;
+  -o-transition: width 0.3s ease;
+}
+
+.navbar-menu a:hover::after {
+  width: 100%;
+}
+
+.navbar-menu a:hover {
+  color: #f4c300; /* Yellow text on hover */
+}

@@ -1,0 +1,76 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.hero-section {
+    height: 100vh;
+    background: url('../../assets/hero-2.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    color: #fff;
+}
+
+.text-content {
+    max-width: 50%;
+    margin-left: 10%; /* Move text content further to the right */
+}
+
+.text-content h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 4rem; /* Increased font size for prominence */
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.2; /* Improved line height for readability */
+    letter-spacing: -1px; /* Slightly tightened letter spacing */
+}
+
+.text-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem; /* Slightly larger font size */
+    font-weight: 400;
+    margin-bottom: 2rem;
+    line-height: 1.6; /* Increased line height for better readability */
+}
+
+.hero-button {
+    text-decoration: none;
+    background-color: #f4c300; /* Changed to yellow */
+    color: #1d003b; /* Dark text color for contrast */
+    padding: 0.75rem 2rem; /* Increased padding for a better button size */
+    border-radius: 8px; /* Slightly rounded corners */
+    font-size: 1.1rem; /* Increased font size */
+    font-weight: 600; /* Bold text for emphasis */
+    transition: background-color 0.3s, transform 0.3s; /* Added transform transition */
+}
+
+.hero-button:hover {
+    background-color: #e3b900; /* Slightly darker yellow */
+    transform: scale(1.05); /* Slightly enlarged on hover */
+}
+
+.image-content {
+    max-width: 45%;
+    overflow: hidden; /* Ensure image doesn’t overflow */
+}
+
+.image-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounded corners for a softer look */
+    object-fit: cover; /* Maintain aspect ratio while scaling */
+    margin-right: 1rem; /* Move image content further to the left */
+ 
+}
